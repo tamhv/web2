@@ -1,0 +1,11 @@
+web2: 
+  container_name: web2
+  image: tamhv87/web2:1.0
+  ports: 
+    - "880:80"
+    - "8443:443"
+    - "3306:3306"
+    - "2222:22"
+  volumes: 
+    - c:\users\tamhuynh\mydocker\www:/var/www
+    - c:\users\tamhuynh\mydocker\mysql\data:/var/lib/mysql
