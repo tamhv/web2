@@ -49,12 +49,13 @@ RUN ./mysql_init.sh
 
 #RUN service mysqld start 
 #RUN /usr/bin/mysqladmin -u root password 'Anhyeuem123'
+#RUN service mysqld stop
 
 #RUN chown -R mysql:mysql /var/lib/mysql
 
 ADD supervisord.conf /etc/
 VOLUME /var/www
-#VOLUME /var/lib/mysql
+VOLUME /var/lib/mysql
 
 EXPOSE 22 80 3306
 

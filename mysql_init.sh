@@ -1,5 +1,11 @@
 #!/bin/bash
 
-if [ ! -f /var/lib/mysql/ibdata1 ]; then
-	mysql_install_db
-fi
+service mysqld start 
+
+sleep 10
+
+/usr/bin/mysqladmin -u root password 'Anhyeuem123'
+
+service mysqld stop
+
+chown -R mysql:mysql /var/lib/mysql

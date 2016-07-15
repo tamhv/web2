@@ -7,5 +7,5 @@ web2:
     - "3306:3306"
     - "2222:22"
   volumes: 
-    - c:\users\tamhuynh\mydocker\www:/var/www
-    - c:\users\tamhuynh\mydocker\mysql\data:/var/lib/mysql
+    - /Users/tamhuynh/docker/web2/data/www:/var/www
+    - /Users/tamhuynh/docker/web2/data/mysql:/var/lib/mysql
